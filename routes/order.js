@@ -12,9 +12,7 @@ router.post('/', async (req, res) => {
         if (!productData) {
             return res.status(404).json({ message: "Product not found" });
         }
-
         const totalPrice = productData.Price * quantity;
-
         const newOrder = new Order({
             product: product,
             quantity: quantity,

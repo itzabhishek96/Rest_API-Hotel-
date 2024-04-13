@@ -10,7 +10,6 @@ const orderSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
-
 });
 
 module.exports = mongoose.model('Order', orderSchema);
